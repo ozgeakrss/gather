@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GATHER| Etkinlikleri keşfedin!</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <main class="auth-container">
+
+    <section class="auth-box">
+
+        <h1>Gather</h1>
+        <p>Etkinlikleri keşfet, paylaş ve bir araya gel.</p>
+
+        <div class="auth-tabs">
+            <button id="login-tab" class="active">Giriş Yap</button>
+            <button id="register-tab">Kayıt Ol</button>
+        </div>
+
+        <form id="login-form">
+
+            <h2>Tekrar hoş geldin!</h2>
+
+            <label for="login-email">E-posta</label>
+            <input type="email" id="login-email" placeholder="E-posta adresin">
+
+            <label for="login-password">Şifre</label>
+            <input type="password" id="login-password" placeholder="Şifren">
+
+            <button type="submit">Giriş Yap</button>
+
+        </form>
+
+        <form id="register-form" hidden>
+
+            <h2>Gather'a katıl!</h2>
+
+            <label for="register-name">Ad Soyad</label>
+            <input type="text" id="register-name" placeholder="Adın ve soyadın">
+
+            <label for="register-username">Kullanıcı Adı</label>
+            <input type="text" id="register-username" placeholder="Kullanıcı adın">
+
+            <label for="register-email">E-posta</label>
+            <input type="email" id="register-email" placeholder="E-posta adresin">
+
+            <label for="register-password">Şifre</label>
+            <input type="password" id="register-password" placeholder="Şifren">
+
+            <label for="register-password-repeat">Şifre Tekrarı</label>
+            <input type="password" id="register-password-repeat" placeholder="Şifreni tekrar gir">
+
+            <button type="submit">Hesap Oluştur</button>
+
+        </form>
+
+    </section>
+
+</main>
+<script src="js/app.js"></script>
 </body>
 </html>
