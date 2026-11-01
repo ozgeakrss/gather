@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gather | Etkinlikleri Keşfet</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+
+        <a href="home.html" class="logo">Gather</a>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Ana Sayfa</a></li>
+            <li><a href="zpages/create-event.html">Etkinlik Oluştur</a></li>
+            <li><a href="pages/joined-events.html">Katıldığım Etkinlikler</a></li>
+            <li><a href="pages/profile.html">Profilim</a></li>
+        </ul>
+
+        <div class="auth-buttons">
+            <a href="index.html?mode=login" class="login-btn">Giriş Yap</a>
+            <a href="index.html?mode=register" class="register-btn">Kayıt Ol</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Birlikte Daha Fazlasını Keşfet!</h1>
+
+            <p>
+                İlgi alanlarına uygun etkinlikleri keşfet,
+                yeni insanlarla tanış ve güzel anılar biriktir.
+            </p>
+
+            <a href="pages/create-event.html" class="hero-btn">
+                Hemen Etkinlik Oluştur
+            </a>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <h2>Etkinlik Keşfet</h2>
+
+        <div class="search-box">
+            <input
+                    type="text"
+                    id="event-search"
+                    placeholder="Etkinlik adı veya konum ara..."
+            >
+
+            <button type="button" id="search-btn">Ara</button>
+        </div>
+    </section>
+
+    <section class="categories-section">
+        <h2>İlgi Alanına Göre Keşfet</h2>
+
+        <div class="categories">
+            <button class="category-btn active" data-category="all">
+                Tüm Etkinlikler
+            </button>
+
+            <button class="category-btn" data-category="social">
+                Sosyal
+            </button>
+
+            <button class="category-btn" data-category="education">
+                Eğitim
+            </button>
+
+            <button class="category-btn" data-category="sports">
+                Spor
+            </button>
+
+            <button class="category-btn" data-category="art">
+                Sanat
+            </button>
+
+            <button class="category-btn" data-category="technology">
+                Teknoloji
+            </button>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <div class="section-heading">
+            <h2>Yaklaşan Etkinlikler</h2>
+            <a href="#">Tüm Etkinlikleri Gör</a>
+        </div>
+
+        <div class="events-container" id="events-container">
+
+            <article class="event-card">
+                <div class="event-image">
+                    <img src="images/buluşma.png" alt="Kahve buluşması">
+                </div>
+
+                <div class="event-info">
+                    <span class="event-category">Sosyal</span>
+                    <h3>Ankara Kahve Buluşması</h3>
+
+                    <p>
+                        Yeni insanlarla tanışabileceğin
+                        keyifli bir kahve buluşması.
+                    </p>
+
+                    <div class="event-details">
+                        <span>Ankara</span>
+                        <span>15 Kasım 2026</span>
+                    </div>
+
+                    <a href="#" class="event-btn">Etkinlik Detayları</a>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <div class="event-image">
+                    <img src="images/konser.png" alt="Konser">
+                </div>
+
+                <div class="event-info">
+                    <span class="event-category">Eğitim</span>
+                    <h3>Konser</h3>
+
+                    <p>
+                        “Müziğin ritmine kapılmaya hazır mısın? Sevdiğin şarkılara eşlik et,
+                        enerjini paylaş ve unutulmaz bir geceyi müzikseverlerle birlikte yaşa!”
+                    </p>
+
+                    <div class="event-details">
+                        <span>Ankara</span>
+                        <span>18 Kasım 2026</span>
+                    </div>
+
+                    <a href="#" class="event-btn">Etkinlik Detayları</a>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <div class="event-image">
+                    <img src="images/yürüyüş.png" alt="Doğa yürüyüşü">
+                </div>
+
+                <div class="event-info">
+                    <span class="event-category">Spor</span>
+                    <h3>Doğa Yürüyüşü</h3>
+
+                    <p>
+                        Hafta sonunu doğayla iç içe
+                        ve hareketli geçirelim.
+                    </p>
+
+                    <div class="event-details">
+                        <span>Ankara</span>
+                        <span>22 Kasım 2026</span>
+                    </div>
+
+                    <a href="#" class="event-btn">Etkinlik Detayları</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <h2>Gather</h2>
+
+        <p>
+            Ortak ilgi alanlarında buluş,
+            yeni insanlarla tanış ve birlikte keşfet.
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 Gather. Tüm hakları saklıdır.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
