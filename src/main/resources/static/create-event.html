@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etkinlik Oluştur | Gather</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">Gather</a>
+
+    <ul>
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="create-event.html">Etkinlik Oluştur</a></li>
+      <li><a href="joined-events.html">Katıldıklarım</a></li>
+      <li><a href="profile.html">Profilim</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="create-event-section">
+
+    <h1>Yeni Etkinlik Oluştur</h1>
+    <p>Yeni bir etkinlik oluştur ve insanları bir araya getir.</p>
+
+    <form id="createEventForm">
+
+      <div class="form-group">
+        <label for="eventName">Etkinlik Adı</label>
+        <input
+                type="text"
+                id="eventName"
+                name="eventName"
+                placeholder="Etkinliğin adını girin"
+                required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="eventDescription">Etkinlik Açıklaması</label>
+        <textarea
+                id="eventDescription"
+                name="eventDescription"
+                placeholder="Etkinliğinizi açıklayın"
+                rows="5"
+                required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="eventCategory">Etkinlik Kategorisi</label>
+        <select id="eventCategory" name="eventCategory" required>
+          <option value="">Kategori seçin</option>
+          <option value="technology">Teknoloji</option>
+          <option value="education">Eğitim</option>
+          <option value="sports">Spor</option>
+          <option value="art">Sanat</option>
+          <option value="social">Sosyal</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="eventDate">Etkinlik Tarihi</label>
+        <input
+                type="date"
+                id="eventDate"
+                name="eventDate"
+                required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="eventTime">Etkinlik Saati</label>
+        <input
+                type="time"
+                id="eventTime"
+                name="eventTime"
+                required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="eventLocation">Etkinlik Konumu</label>
+        <input
+                type="text"
+                id="eventLocation"
+                name="eventLocation"
+                placeholder="Etkinliğin gerçekleşeceği yer"
+                required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="participantLimit">Katılımcı Limiti</label>
+        <input
+                type="number"
+                id="participantLimit"
+                name="participantLimit"
+                placeholder="Maksimum katılımcı sayısı"
+                min="1"
+                required
+        >
+      </div>
+
+      <button type="submit" id="createEventButton">
+        Etkinlik Oluştur
+      </button>
+
+    </form>
+
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Gather. Tüm hakları saklıdır.</p>
+</footer>
+
+</body>
+</html>
