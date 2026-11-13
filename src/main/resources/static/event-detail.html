@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Etkinlik Detayı| Gather</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/event-detail.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="home.html" class="logo">Gather</a>
+
+            <ul class="nav-links">
+                <li><a href="home.html">Ana Sayfa</a></li>
+                <li><a href="create-event.html">Etkinlik Oluştur</a></li>
+                <li><a href="joined-events.html">Katıldıklarım</a></li>
+                <li><a href="profile.html">Profilim</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="index.html" class="login-btn">Giriş Yap</a>
+                <a href="index.html" class="register-btn">Kayıt Ol</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="event-detail-section">
+            <div class="detail-image">
+                <img
+                    id="event-image"
+                    src="images/buluşma.png"
+                    alt="Etkinlik Görseli"
+                    class="event-image"
+                    >
+            </div>
+
+            <div class="event-info">
+                <h1 id="event-title">Etkinlik Başlığı</h1>
+                    <div class="event-meta">
+                        <p>
+                            <strong>Tarih:</strong>
+                            <span id="event-date">Tarih Bilgisi</span>
+                        </p>
+
+                        <p>
+                            <strong>Saat:</strong>
+                            <span id="event-time">Başlangıç Saati</span>
+                        </p>
+
+                        <p>
+                            <strong>Konum:</strong>
+                            <span id="event-location">Etkinlik Konumu</span>
+                        </p>
+                    </div>
+
+                    <div class="event-description">
+                        <h2>Etkinlik Hakkında</h2>
+                        <p id="event-description">
+                            Etkinlik açıklaması burda görüntülenecektir.
+                        </p>
+                    </div>
+
+
+                <div class="event-organizer">
+                    <h2>Etkinlik Sahibi</h2>
+                    <p id="organizer-name">Ad Soyad</p>
+                </div>
+
+                <div class="event-capacity">
+                    <h2>Etkinlik Kontenjanı</h2>
+
+                    <p>
+                        <span id="participant-count">Katılımcı sayısı</span> /
+                        <span id="event-capacity">Toplam kontenjan</span> kişi
+                    </p>
+
+                    <div class="capacity-progress">
+                        <div
+                                id="capacity-progress-bar"
+                                class="capacity-progress-bar">
+                        </div>
+                    </div>
+
+                    <p id="capacity-status">
+                        Doluluk oranı burda gösterilecektir.
+                    </p>
+                </div>
+
+                <div class="event-action">
+                    <button type="button" id="join-event-btn">
+                        Etkinliğe Katıl
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
