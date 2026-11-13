@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Profilim| Gather</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="home.html" class="logo">Gather</a>
+            <ul class="nav-links">
+                <li><a href="home.html">Ana Sayfa</a></li>
+                <li><a href="create-event.html">Etkinlik Oluştur</a></li>
+                <li><a href="joined-events.html">Katıldıklarım</a></li>
+                <li><a href="profile.html">Profilim</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="index.html" class="login-btn">Giriş Yap</a>
+                <a href="index.html" class="register-btn">Kayıt Ol</a>
+            </div>
+        </nav>
+    </header>
+
+        <main>
+            <section class="profile-section">
+                <div class="profile-info">
+                    <div class="profile-avatar">
+                        <svg viewbox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+                        </svg>
+                    </div>
+                    <div class="profile-details">
+                    <h1 id="profile-name">Ad Soyad</h1>
+                    <p id="profile-email">E-posta adresi</p>
+                    <button type="button" id="edit-profile-btn">
+                        Profili Düzenle
+                    </button>
+                    </div>
+                </div>
+            </section>
+            <section class="profile-events-section">
+                <div class="profile-tabs">
+                    <button type="button" class="profile-tab active" data-tab="created">
+                        Oluşturduğum Etkinlikler
+                    </button>
+                    <button type="button" class="profile-tab" data-tab="joined">
+                        Katıldığım Etkinlikler
+                    </button>
+                </div>
+                <div class="profile-events" id="created-events">
+                    <div class="events-container">
+                        <article class="event-card">
+                            <div class="event-image">
+                                <img
+                                        class="event-card-image"
+                                        src="images/buluşma.png"
+                                        alt="Etkinlik görseli"
+                                >
+                            </div>
+
+                            <div class="event-info">
+                                <span class="event-category">Kategori</span>
+                                <h3 class="event-title">Örnek Etkinlik</h3>
+
+                                <p class="event-short-description">
+                                    Etkinlik açıklaması burda gösterilecek.
+                                </p>
+
+                                <div class="event-details">
+                                    <span class="event-location">Konum</span>
+                                    <span class="event-date">Tarih</span>
+                                </div>
+
+                                <a href="event-detail.html" class="event-btn">
+                                    Etkinlik Detayları
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="profile-events" id="joined-events">
+                    <div class="events-container">
+                        Kullanıcının katıldığı etkinlikler burada gösterilecek.
+                    </div>
+                </div>
+            </section>
+        </main>
+</body>
+</html>
