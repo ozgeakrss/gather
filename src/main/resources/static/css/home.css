@@ -1,94 +1,3 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f8fc;
-    color: #20243a;
-    line-height: 1.6;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button,
-input {
-    font: inherit;
-}
-
-.header {
-    width: 100%;
-    background-color: #ffffff;
-    padding: 18px 8%;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #5146a5;
-    letter-spacing: -1px;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    list-style: none;
-}
-
-.nav-links a {
-    font-size: 14px;
-    font-weight: 600;
-    color: #555b70;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #6558c5;
-}
-
-.auth-buttons {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.login-btn,
-.register-btn {
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.login-btn {
-    color: #5146a5;
-    border: 1px solid #5146a5;
-}
-
-.register-btn {
-    background-color: #5146a5;
-    color: #ffffff;
-    transition: background-color 0.3s;
-}
-
-.register-btn:hover {
-    background-color: #3f358c;
-}
-
 .hero {
     min-height: 360px;
     display: flex;
@@ -334,18 +243,6 @@ input {
 }
 
 @media (max-width: 900px) {
-    .navbar {
-        flex-wrap: wrap;
-    }
-
-    .nav-links {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 18px;
-    }
-
     .events-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -356,36 +253,6 @@ input {
 }
 
 @media (max-width: 600px) {
-    .header {
-        padding: 16px 5%;
-    }
-
-    .navbar {
-        justify-content: space-between;
-    }
-
-    .logo {
-        font-size: 24px;
-    }
-
-    .auth-buttons {
-        gap: 7px;
-    }
-
-    .login-btn,
-    .register-btn {
-        padding: 8px 11px;
-        font-size: 12px;
-    }
-
-    .nav-links {
-        gap: 12px;
-    }
-
-    .nav-links a {
-        font-size: 12px;
-    }
-
     .hero {
         min-height: 320px;
         padding: 55px 20px;

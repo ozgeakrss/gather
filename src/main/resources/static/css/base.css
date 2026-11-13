@@ -20,6 +20,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     min-height: 100vh;
+    line-height:1.6;
 }
 
 a {
@@ -27,8 +28,9 @@ a {
     color: inherit;
 }
 
-button {
-    font-family: inherit;
+button,
+input{
+    font: inherit;
 }
 
 .header{
